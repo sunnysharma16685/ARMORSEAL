@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Armorseal™ | Heat Shrink Cable Accessories</title>
+<meta name="description" content="Armorseal™ manufactures high-performance heat shrink cable jointing & termination systems from 1.1kV to 33kV.">
+
+<style>
+:root{
+  --primary:#0a2a43;
+  --secondary:#134f7d;
+  --accent:#f6b400;
+  --dark:#081f33;
+  --light:#f4f7fa;
+  --text:#1f2933;
+  --glow:0 0 18px rgba(246,180,0,.55);
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:"Segoe UI","Inter",Arial,sans-serif;
+  color:var(--text);
+  background:#fff;
+  line-height:1.7;
+}
+
+/* ========== NAVBAR ========== */
+.navbar{
+  position:sticky;
+  top:0;
+  z-index:3000;
+  background:linear-gradient(90deg,#061827,#0a2a43);
+  box-shadow:0 4px 20px rgba(0,0,0,.25);
+}
+.nav-wrap{
+  max-width:1280px;
+  margin:auto;
+  padding:14px 24px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+.logo img{height:44px}
+
+.nav{
+  display:flex;
+  align-items:center;
+}
+.nav a{
+  color:#fff;
+  margin-left:26px;
+  text-decoration:none;
+  font-weight:600;
+  font-size:15px;
+  position:relative;
+  white-space:nowrap;
+}
+.nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-6px;
+  width:0;
+  height:2px;
+  background:var(--accent);
+  transition:.3s;
+}
+.nav a:hover::after{width:100%}
+
+.nav a.cta{
+  background:var(--accent);
+  color:#000;
+  padding:8px 18px;
+  border-radius:4px;
+  box-shadow:var(--glow);
+}
+
+/* ===== DROPDOWN ===== */
+.dropdown{position:relative}
+.dropdown > a::after{content:" ▾";font-size:12px}
+.dropdown-menu{
+  position:absolute;
+  top:38px;
+  left:0;
+  background:#fff;
+  min-width:280px;
+  box-shadow:0 15px 35px rgba(0,0,0,.2);
+  display:none;
+}
+.dropdown-menu a{
+  display:block;
+  padding:12px 18px;
+  color:#000;
+  font-size:14px;
+  border-bottom:1px solid #eee;
+}
+.dropdown-menu a:hover{
+  background:var(--light);
+  color:var(--primary);
+}
+.dropdown:hover .dropdown-menu{display:block}
+
+/* ========== HERO ========== */
+.hero{
+  background:
+    radial-gradient(circle at 20% 20%,rgba(246,180,0,.12),transparent 40%),
+    linear-gradient(135deg,var(--primary),var(--secondary));
+  padding:100px 20px;
+  color:#fff;
+}
+.hero-inner{
+  max-width:1280px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:60px;
+  align-items:center;
+}
+.hero h1{
+  font-size:46px;
+  line-height:1.15;
+}
+.hero p{
+  font-size:18px;
+  max-width:560px;
+  opacity:.95;
+}
+.btn{
+  display:inline-block;
+  margin-top:26px;
+  margin-right:12px;
+  padding:14px 32px;
+  background:var(--accent);
+  color:#000;
+  font-weight:700;
+  text-decoration:none;
+  border-radius:4px;
+  box-shadow:var(--glow);
+}
+.hero-right img{
+  width:100%;
+  border-radius:12px;
+  box-shadow:0 20px 45px rgba(0,0,0,.35);
+}
+
+/* ========== SECTIONS ========== */
+section{padding:100px 20px}
+.container{max-width:1280px;margin:auto}
+h2{
+  text-align:center;
+  font-size:38px;
+  color:var(--primary);
+}
+.subtext{
+  text-align:center;
+  max-width:820px;
+  margin:20px auto 70px;
+  color:#444;
+}
+
+/* ========== GRID / CARDS ========== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:34px;
+}
+.card{
+  background:#fff;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 10px 30px rgba(0,0,0,.1);
+  transition:.3s;
+}
+.card:hover{
+  transform:translateY(-8px);
+  box-shadow:0 22px 45px rgba(0,0,0,.18);
+}
+.card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+.card .content{padding:26px}
+.card h3{margin-top:0;color:var(--secondary)}
+
+/* ========== STATS ========== */
+.stats{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:30px;
+  text-align:center;
+}
+.stat{
+  background:#fff;
+  padding:34px 20px;
+  border-radius:12px;
+  box-shadow:0 6px 20px rgba(0,0,0,.08);
+}
+.stat strong{
+  font-size:24px;
+  color:var(--primary);
+}
+
+/* ========== CTA ========== */
+.cta-section{
+  background:var(--light);
+  text-align:center;
+}
+.cta-section a{
+  display:inline-block;
+  margin-top:26px;
+  padding:16px 36px;
+  background:var(--primary);
+  color:#fff;
+  text-decoration:none;
+  font-weight:700;
+  border-radius:4px;
+}
+
+/* ========== FOOTER ========== */
+footer{
+  background:var(--dark);
+  color:#fff;
+  padding:60px 20px;
+}
+.footer-wrap{
+  max-width:1280px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:40px;
+}
+footer a{color:var(--accent);text-decoration:none}
+
+/* ========== MOBILE ========== */
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr}
+  .hero h1{font-size:34px}
+  .nav{display:none}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+  <div class="nav-wrap">
+    <div class="logo">
+      <img src="images/armorseal-logo-white.png">
+    </div>
+
+    <div class="nav">
+      <a href="index.html">Home</a>
+
+      <div class="dropdown">
+        <a href="products.html">Products</a>
+        <div class="dropdown-menu">
+          <a href="heat-shrink-termination-kit.html">Heat Shrinkable Termination Kit</a>
+          <a href="heat-shrink-joint-kit.html">Heat Shrinkable Joint Kit</a>
+          <a href="polymer-insulator.html">Polymer Insulator</a>
+          <a href="power-cable-accessories.html">Power Cable Accessories</a>
+          <a href="touch-proof-termination-kit.html">Touch Proof Termination Kit</a>
+        </div>
+      </div>
+
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+
+      <a href="https://wa.me/919427000787" class="cta" target="_blank">Enquiry</a>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div>
+      <h1>Powering Safe & Reliable<br>Cable Connections</h1>
+      <p>
+        Armorseal™ manufactures premium heat shrink cable jointing, termination
+        systems and accessories engineered for long-term reliability in critical
+        power networks from 1.1kV to 33kV.
+      </p>
+
+      <a href="catalogue/armorseal-catalogue.pdf" class="btn" target="_blank">
+        Download Catalogue
+      </a>
+
+      <a href="https://wa.me/919427000787" class="btn" target="_blank">
+        WhatsApp Enquiry
+      </a>
+    </div>
+
+    <div class="hero-right">
+      <img src="images/slide1.jpg">
+    </div>
+  </div>
+</div>
+
+<!-- PRODUCTS -->
+<section>
+  <div class="container">
+    <h2>Our Product Portfolio</h2>
+    <p class="subtext">
+      Trusted by utilities, EPC contractors & industrial power projects.
+    </p>
+
+    <div class="grid">
+
+      <!-- TERMINATION KIT -->
+      <a href="heat-shrink-termination-kit.html" class="card">
+        <img src="images/product-termination.jpg" alt="Heat Shrinkable Termination Kit">
+        <div class="content">
+          <h3>Termination Kits</h3>
+        </div>
+      </a>
+
+      <!-- JOINT KIT -->
+      <a href="heat-shrink-joint-kit.html" class="card">
+        <img src="images/product-joint.jpg" alt="Heat Shrinkable Joint Kit">
+        <div class="content">
+          <h3>Jointing Kits</h3>
+        </div>
+      </a>
+
+      <!-- POLYMER INSULATOR -->
+      <a href="polymer-insulator.html" class="card">
+        <img src="images/product-polymer-insulator.jpg" alt="Polymer Insulator">
+        <div class="content">
+          <h3>Polymer Insulators</h3>
+        </div>
+      </a>
+
+      <!-- TOUCH PROOF -->
+      <a href="touch-proof-termination-kit.html" class="card">
+        <img src="images/product-touch-proof.jpg" alt="Touch Proof Termination Kit">
+        <div class="content">
+          <h3>Touch Proof Terminations</h3>
+        </div>
+      </a>
+
+      <!-- ACCESSORIES -->
+      <a href="power-cable-accessories.html" class="card">
+        <img src="images/product-accessories.jpg" alt="Power Cable Accessories">
+        <div class="content">
+          <h3>Cable Accessories</h3>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section style="background:#f4f7fa">
+  <div class="container">
+    <h2>Why Choose Armorseal</h2>
+    <div class="stats">
+      <div class="stat"><strong>Reliability</strong><br>Tested performance</div>
+      <div class="stat"><strong>Safety</strong><br>Certified materials</div>
+      <div class="stat"><strong>Experience</strong><br>14+ years expertise</div>
+      <div class="stat"><strong>Support</strong><br>EPC & utility focused</div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <h2>Let’s Build Reliable Power Networks</h2>
+  <p>sales@armorseal.in | www.armorseal.in</p>
+  <a href="contact.html">Contact Our Sales Team</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-wrap">
+    <div>
+      <img src="images/armorseal-logo.png" style="max-width:180px"><br><br>
+      Engineered for Power & Reliability
+    </div>
+    <div>
+      <strong>Contact</strong><br>
+      sales@armorseal.in<br>
+      armorseal.india@gmail.com<br>
+      +91 9427000787
+    </div>
+    <div>
+      <strong>Location</strong><br>
+      Vadodara, Gujarat<br>
+      India
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
