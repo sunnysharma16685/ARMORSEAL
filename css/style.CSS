@@ -295,18 +295,4 @@ footer a{
   color:var(--accent);
 }
 
-/* ===== MOBILE ===== */
-@media(max-width:1000px){
-  .hero-inner{
-    flex-direction:column;
-    text-align:center;
-  }
 
-  .nav{
-    display:none;
-  }
-
-  .hero h1{
-    font-size:34px;
-  }
-}
