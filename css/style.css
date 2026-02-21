@@ -310,3 +310,97 @@ footer a{
     font-size:34px;
   }
 }
+
+/* ============================= */
+/* PREMIUM INDUSTRIAL HERO */
+/* ============================= */
+
+.premium-hero{
+  position:relative;
+  height:100vh;
+  background:linear-gradient(135deg,#061827,#0a2a43,#081f33);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#fff;
+  overflow:hidden;
+}
+
+.hero-content{
+  position:relative;
+  z-index:2;
+  max-width:800px;
+  padding:20px;
+}
+
+.premium-hero h1{
+  font-size:52px;
+  font-weight:800;
+  line-height:1.2;
+}
+
+.premium-hero h1 span{
+  color:#f6b400;
+  text-shadow:0 0 20px rgba(246,180,0,.8);
+}
+
+.premium-hero p{
+  margin-top:20px;
+  font-size:18px;
+  opacity:.9;
+}
+
+.hero-buttons{
+  margin-top:35px;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.btn-primary{
+  background:#f6b400;
+  color:#000;
+  padding:14px 30px;
+  font-weight:700;
+  text-decoration:none;
+  border-radius:6px;
+  box-shadow:0 0 20px rgba(246,180,0,.5);
+  transition:.3s;
+}
+
+.btn-primary:hover{
+  transform:translateY(-4px);
+  box-shadow:0 0 35px rgba(246,180,0,.9);
+}
+
+.btn-outline{
+  border:2px solid #f6b400;
+  color:#f6b400;
+  padding:14px 30px;
+  text-decoration:none;
+  border-radius:6px;
+  transition:.3s;
+}
+
+.btn-outline:hover{
+  background:#f6b400;
+  color:#000;
+}
+
+/* Electric Moving Line */
+.power-line{
+  position:absolute;
+  bottom:0;
+  left:-100%;
+  width:200%;
+  height:4px;
+  background:linear-gradient(90deg,transparent,#f6b400,transparent);
+  animation:powerMove 3s linear infinite;
+}
+
+@keyframes powerMove{
+  0%{left:-100%}
+  100%{left:100%}
+}
