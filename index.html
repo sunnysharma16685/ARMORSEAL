@@ -7,10 +7,7 @@
 <title>Armorseal™ | Heat Shrink Cable Accessories</title>
 <meta name="description" content="Armorseal™ manufactures high-performance heat shrink cable jointing & termination systems from 1.1kV to 33kV.">
 
-<!-- MAIN CSS -->
 <link rel="stylesheet" href="css/style.css">
-
-<!-- Favicon -->
 <link rel="icon" type="image/png" href="images/favicon.png">
 
 </head>
@@ -19,11 +16,16 @@
 <!-- ================= NAVBAR ================= -->
 <header class="navbar">
   <div class="nav-wrap">
-    
+
+    <!-- Back Button (Mobile Only) -->
+    <button class="back-btn" onclick="history.back()">←</button>
+
+    <!-- Logo -->
     <div class="logo">
       <img src="images/armorseal-logo-white.png" alt="Armorseal Logo">
     </div>
 
+    <!-- Desktop Navigation -->
     <nav class="nav">
       <a href="index.html">Home</a>
 
@@ -41,18 +43,32 @@
       <a href="services.html">Services</a>
       <a href="contact.html">Contact</a>
 
-      <a href="https://wa.me/919427000787" class="cta" target="_blank">
-        Enquiry
-      </a>
+      <a href="https://wa.me/919427000787" class="cta" target="_blank">Enquiry</a>
     </nav>
+
+    <!-- Hamburger -->
+    <div class="hamburger" onclick="toggleMenu(this)">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
   </div>
 </header>
 
-<!-- HERO -->
-<section class="premium-hero">
-  <div class="hero-overlay"></div>
 
+<!-- ================= MOBILE FULL SCREEN MENU ================= -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="products.html">Products</a>
+  <a href="services.html">Services</a>
+  <a href="contact.html">Contact</a>
+  <a href="https://wa.me/919427000787" class="cta">Enquiry</a>
+</div>
+
+
+<!-- ================= HERO ================= -->
+<section class="premium-hero">
   <div class="hero-content">
     <h1>
       Engineering <span>Power</span><br>
@@ -70,16 +86,15 @@
     </div>
   </div>
 
-  <!-- Animated Power Line -->
   <div class="power-line"></div>
 </section>
-<!-- PRODUCTS SLIDER -->
+
+
+<!-- ================= PRODUCTS ================= -->
 <section class="products-section">
   <div class="container">
     <h2>Our Product Portfolio</h2>
-    <p class="subtext">
-      Trusted by utilities & EPC contractors.
-    </p>
+    <p class="subtext">Trusted by utilities & EPC contractors.</p>
 
     <div class="product-slider">
       <div class="product-track">
@@ -109,17 +124,13 @@
           <h3>Cable Accessories</h3>
         </a>
 
-        <!-- duplicate for smooth infinite scroll -->
-        <a href="heat-shrink-termination-kit.html" class="product-card">
-          <img src="images/product-termination.jpg">
-          <h3>Termination Kits</h3>
-        </a>
-
       </div>
     </div>
   </div>
 </section>
-<!-- WHY SECTION -->
+
+
+<!-- ================= WHY ================= -->
 <section class="why">
   <div class="container">
     <h2>Why Choose Armorseal</h2>
@@ -132,6 +143,7 @@
     </div>
   </div>
 </section>
+
 
 <!-- ================= FOOTER ================= -->
 <footer>
@@ -158,8 +170,23 @@
   </div>
 </footer>
 
-</body>
-</html>
+
+<!-- ================= MOBILE BOTTOM BAR ================= -->
+<div class="mobile-bottom">
+  <a href="index.html">🏠</a>
+  <a href="products.html">📦</a>
+  <a href="contact.html">☎</a>
+  <a href="https://wa.me/919427000787">💬</a>
+</div>
+
+
+<!-- ================= JS ================= -->
+<script>
+function toggleMenu(el){
+  el.classList.toggle("active");
+  document.getElementById("mobileMenu").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
