@@ -59,7 +59,30 @@
 </section>
 
 <!-- ================= PRODUCT SECTION ================= -->
-<section class="products-section">
+<section class="products-section" id="product-page">
+
+  <style>
+    /* Product Page Only */
+    #product-page .grid{
+      display:grid;
+      grid-template-columns:repeat(2, 1fr);
+      gap:40px;
+    }
+
+    #product-page .card img{
+      width:100%;
+      height:260px;
+      object-fit:cover;
+      display:block;
+    }
+
+    @media(max-width:768px){
+      #product-page .grid{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+
   <div class="container">
 
     <h2>Product Categories</h2>
