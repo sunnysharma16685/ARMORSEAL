@@ -7,207 +7,31 @@
 <title>Heat Shrinkable Termination Kit | Armorseal™</title>
 <meta name="description" content="Armorseal™ Heat Shrinkable Termination Kits for indoor & outdoor termination of LV, MV & HV power cables up to 33kV.">
 
-<style>
-:root{
-  --primary:#0a2a43;
-  --secondary:#134f7d;
-  --accent:#f6b400;
-  --dark:#081f33;
-  --light:#f4f7fa;
-  --text:#1f2933;
-  --glow:0 0 18px rgba(246,180,0,.55);
-}
-
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:"Segoe UI","Inter",Arial,sans-serif;
-  color:var(--text);
-  background:#fff;
-  line-height:1.7;
-}
-
-/* ===== NAVBAR ===== */
-.navbar{
-  position:sticky;
-  top:0;
-  z-index:3000;
-  background:linear-gradient(90deg,#061827,#0a2a43);
-  box-shadow:0 4px 20px rgba(0,0,0,.25);
-}
-.nav-wrap{
-  max-width:1280px;
-  margin:auto;
-  padding:14px 24px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-.logo img{height:44px}
-.nav{
-  display:flex;
-  align-items:center;
-}
-.nav a{
-  color:#fff;
-  margin-left:26px;
-  text-decoration:none;
-  font-weight:600;
-  font-size:15px;
-  position:relative;
-}
-.nav a::after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:-6px;
-  width:0;
-  height:2px;
-  background:var(--accent);
-  transition:.3s;
-}
-.nav a:hover::after{width:100%}
-.nav a.cta{
-  background:var(--accent);
-  color:#000;
-  padding:8px 18px;
-  border-radius:4px;
-  box-shadow:var(--glow);
-}
-
-/* ===== DROPDOWN ===== */
-.dropdown{position:relative}
-.dropdown > a::after{content:" ▾";font-size:12px}
-.dropdown-menu{
-  position:absolute;
-  top:38px;
-  left:0;
-  background:#fff;
-  min-width:280px;
-  box-shadow:0 15px 35px rgba(0,0,0,.2);
-  display:none;
-}
-.dropdown-menu a{
-  display:block;
-  padding:12px 18px;
-  color:#000;
-  font-size:14px;
-  border-bottom:1px solid #eee;
-}
-.dropdown-menu a:hover{
-  background:var(--light);
-  color:var(--primary);
-}
-.dropdown:hover .dropdown-menu{display:block}
-
-/* ===== PRODUCT HERO ===== */
-.product-hero{
-  background:
-    radial-gradient(circle at 20% 20%,rgba(246,180,0,.12),transparent 40%),
-    linear-gradient(135deg,var(--primary),var(--secondary));
-  color:#fff;
-  padding:90px 20px;
-}
-.product-hero .wrap{
-  max-width:1280px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:60px;
-  align-items:center;
-}
-.product-hero h1{
-  font-size:42px;
-  margin-bottom:14px;
-}
-.product-hero p{
-  font-size:18px;
-  max-width:560px;
-  opacity:.95;
-}
-.product-hero img{
-  width:100%;
-  border-radius:12px;
-}
-
-/* ===== SECTIONS ===== */
-section{padding:100px 20px}
-.container{max-width:1280px;margin:auto}
-h2{
-  font-size:34px;
-  color:var(--primary);
-}
-.grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:50px;
-}
-ul{padding-left:18px}
-ul li{margin-bottom:10px}
-
-/* ===== CTA ===== */
-.cta-box{
-  background:var(--light);
-  padding:50px;
-  border-radius:14px;
-  text-align:center;
-}
-.cta-box a{
-  display:inline-block;
-  margin-top:20px;
-  padding:16px 36px;
-  background:var(--accent);
-  color:#000;
-  font-weight:700;
-  text-decoration:none;
-  border-radius:4px;
-  box-shadow:var(--glow);
-}
-
-/* ===== FOOTER ===== */
-footer{
-  background:var(--dark);
-  color:#fff;
-  padding:60px 20px;
-}
-.footer-wrap{
-  max-width:1280px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:40px;
-}
-
-/* ===== MOBILE ===== */
-@media(max-width:900px){
-  .nav{display:none}
-  .product-hero .wrap{grid-template-columns:1fr}
-  .product-hero h1{font-size:32px}
-  .grid{grid-template-columns:1fr}
-}
-</style>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<div class="navbar">
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
   <div class="nav-wrap">
+
     <div class="logo">
-      <img src="images/armorseal-logo-white.png">
+      <img src="images/armorseal-logo-white.png" alt="Armorseal Logo">
     </div>
 
-    <div class="nav">
+    <nav class="nav">
       <a href="index.html">Home</a>
 
       <div class="dropdown">
         <a href="products.html">Products</a>
         <div class="dropdown-menu">
-          <a href="heat-shrink-termination-kit.html">Heat Shrinkable Termination Kit</a>
-          <a href="heat-shrink-joint-kit.html">Heat Shrinkable Joint Kit</a>
+          <a href="heat-shrink-termination-kit.html">Termination Kit</a>
+          <a href="heat-shrink-joint-kit.html">Joint Kit</a>
           <a href="polymer-insulator.html">Polymer Insulator</a>
-          <a href="power-cable-accessories.html">Power Cable Accessories</a>
-          <a href="touch-proof-termination-kit.html">Touch Proof Termination Kit</a>
+          <a href="power-cable-accessories.html">Cable Accessories</a>
+          <a href="touch-proof-termination-kit.html">Touch Proof</a>
         </div>
       </div>
 
@@ -215,97 +39,170 @@ footer{
       <a href="contact.html">Contact</a>
 
       <a href="https://wa.me/919427000787" class="cta" target="_blank">Enquiry</a>
-    </div>
+    </nav>
   </div>
-</div>
+</header>
 
-<!-- PRODUCT HERO -->
-<section class="product-hero">
-  <div class="wrap">
+<!-- ================= PREMIUM HERO ================= -->
+<section class="premium-hero" style="height:75vh;">
+  <div class="hero-content">
+    <h1>
+      Heat Shrinkable <span>Termination Kit</span>
+    </h1>
 
-    <div>
-      <h1>Heat Shrinkable Termination Kit</h1>
-      <p>
-        Armorseal™ Heat Shrinkable Termination Kits are engineered for
-        <strong>indoor and outdoor termination</strong> of LV, MV and HV
-        power cables from <strong>1.1kV to 33kV</strong>, ensuring superior
-        electrical insulation, environmental sealing and long-term service life.
-      </p>
-    </div>
-
-    <div>
-      <img src="images/product-termination.jpg" alt="Heat Shrinkable Termination Kit">
-    </div>
-
+    <p>
+      Designed for indoor and outdoor termination of power cables
+      from 1.1kV to 33kV, ensuring superior insulation,
+      environmental sealing and long-term reliability.
+    </p>
   </div>
 </section>
 
-<!-- DETAILS -->
-<section>
-  <div class="container grid">
+<!-- ================= PRODUCT DETAILS ================= -->
+<section class="about-section">
+  <div class="container about-grid">
 
-    <div>
-      <h2>Key Features</h2>
+    <div class="about-text">
+      <h2>Product Overview</h2>
+
+      <p>
+        Armorseal™ Heat Shrinkable Termination Kits are engineered
+        for dependable performance in LV, MV and HV networks.
+      </p>
+
+      <p>
+        The kits provide high electrical insulation, anti-tracking
+        performance, UV resistance and environmental protection,
+        ensuring long service life even in harsh operating conditions.
+      </p>
+
+      <h2 style="margin-top:30px;">Key Features</h2>
       <ul>
         <li>Suitable for indoor & outdoor installations</li>
         <li>High insulation & anti-tracking performance</li>
         <li>Excellent resistance to moisture & UV</li>
         <li>Designed for harsh environmental conditions</li>
-        <li>Safe, easy & installer-friendly application</li>
+        <li>Installer-friendly design</li>
       </ul>
     </div>
 
-    <div>
-      <h2>Applications</h2>
-      <ul>
-        <li>Power utilities & substations</li>
-        <li>EPC & infrastructure projects</li>
-        <li>Industrial power distribution networks</li>
-        <li>Renewable energy & captive power plants</li>
-      </ul>
+    <div class="about-highlight">
+      <div class="highlight-box">
+        <h3>Applications</h3>
+        <ul>
+          <li>Power utilities & substations</li>
+          <li>EPC & infrastructure projects</li>
+          <li>Industrial power distribution</li>
+          <li>Renewable & captive power plants</li>
+        </ul>
+      </div>
     </div>
 
   </div>
 </section>
 
-<!-- CTA -->
-<section>
+<!-- ================= PRODUCT IMAGE ================= -->
+<section class="products-section">
   <div class="container">
-    <div class="cta-box">
-      <h2>Looking for Technical Details or Pricing?</h2>
-      <p>
-        Speak with our technical sales team for specifications,
-        voltage range selection and project pricing.
-      </p>
+    <h2>Product Gallery</h2>
 
-      <a href="https://wa.me/919427000787?text=Hello%20Team%20Armorseal,%20I%20need%20details%20for%20Heat%20Shrinkable%20Termination%20Kit."
-         target="_blank">
-         WhatsApp Enquiry
-      </a>
+    <div class="grid" style="grid-template-columns:repeat(2,1fr);">
+
+      <div class="card">
+        <img src="images/product-termination.jpg" style="object-fit:contain;height:260px;padding:15px;">
+      </div>
+
+      <div class="card">
+        <img src="images/termination-2.jpg" style="object-fit:contain;height:260px;padding:15px;">
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-wrap">
-    <div>
-      <img src="images/armorseal-logo.png" style="max-width:180px"><br><br>
-      Engineered for Power & Reliability
-    </div>
-    <div>
-      <strong>Contact</strong><br>
-      sales@armorseal.in<br>
-      armorseal.india@gmail.com<br>
-      +91 9427000787
-    </div>
-    <div>
-      <strong>Location</strong><br>
-      Vadodara, Gujarat<br>
-      India
-    </div>
+<!-- ================= CTA SECTION ================= -->
+<section class="cta-section">
+  <div class="container" style="text-align:center;">
+    <h2>Looking for Technical Details or Pricing?</h2>
+    <p>Speak with our technical sales team for specifications and project pricing.</p>
+
+    <a href="https://wa.me/919427000787" class="btn-primary" style="margin-top:20px;">
+      WhatsApp Enquiry
+    </a>
   </div>
+</section>
+
+<!-- ================= PREMIUM COMPACT FOOTER ================= -->
+<footer class="premium-footer">
+
+  <div class="electric-line-footer"></div>
+
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-col">
+      <img src="images/armorseal-logo-white.png" class="footer-logo" alt="Armorseal Logo">
+      <p class="footer-tagline">Power. Protection. Performance.</p>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <!-- MIDDLE -->
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul class="footer-links">
+        <li><a href="heat-shrink-termination-kit.html">Termination Kits</a></li>
+        <li><a href="heat-shrink-joint-kit.html">Jointing Kits</a></li>
+        <li><a href="polymer-insulator.html">Polymer Insulators</a></li>
+        <li><a href="touch-proof-termination-kit.html">Touch Proof</a></li>
+        <li><a href="power-cable-accessories.html">Cable Accessories</a></li>
+      </ul>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p class="footer-text">sales@armorseal.in</p>
+      <p class="footer-text">+91 9427000787</p>
+
+      <a href="https://wa.me/919427000787" class="footer-cta">
+        Enquiry Now
+      </a>
+
+      <h4 class="footer-office-title">Office</h4>
+      <p class="footer-text">GF-11, Vrundalya Avenue</p>
+      <p class="footer-text">Laxmipura, Gotri Road</p>
+      <p class="footer-text">Vadodara - 390016, Gujarat</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    © 2026 Armorseal™ | All Rights Reserved
+  </div>
+
 </footer>
+
+<!-- ================= MOBILE BOTTOM BAR ================= -->
+<div class="mobile-bottom">
+  <a href="index.html">🏠</a>
+  <a href="products.html">📦</a>
+  <a href="contact.html">☎</a>
+  <a href="https://wa.me/919427000787">💬</a>
+</div>
+
+
+<!-- ================= JS ================= -->
+<script>
+function toggleMenu(el){
+  el.classList.toggle("active");
+  document.getElementById("mobileMenu").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>

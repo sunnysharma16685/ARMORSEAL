@@ -7,220 +7,31 @@
 <title>Services | Armorseal™ – Cable Jointing & Termination</title>
 <meta name="description" content="Armorseal™ provides professional cable jointing and termination services executed by certified jointers for LV, MV and HV power networks.">
 
-<style>
-:root{
-  --primary:#0a2a43;
-  --secondary:#134f7d;
-  --accent:#f6b400;
-  --dark:#081f33;
-  --light:#f4f7fa;
-  --text:#1f2933;
-  --glow:0 0 18px rgba(246,180,0,.55);
-}
-
-*{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:"Segoe UI","Inter",Arial,sans-serif;
-  color:var(--text);
-  background:#fff;
-  line-height:1.7;
-}
-
-/* ===== NAVBAR ===== */
-.navbar{
-  position:sticky;
-  top:0;
-  z-index:3000;
-  background:linear-gradient(90deg,#061827,#0a2a43);
-  box-shadow:0 4px 20px rgba(0,0,0,.25);
-}
-.nav-wrap{
-  max-width:1280px;
-  margin:auto;
-  padding:14px 24px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-.logo img{height:44px}
-.nav{
-  display:flex;
-  align-items:center;
-}
-.nav a{
-  color:#fff;
-  margin-left:26px;
-  text-decoration:none;
-  font-weight:600;
-  font-size:15px;
-  position:relative;
-}
-.nav a::after{
-  content:"";
-  position:absolute;
-  left:0;
-  bottom:-6px;
-  width:0;
-  height:2px;
-  background:var(--accent);
-  transition:.3s;
-}
-.nav a:hover::after{width:100%}
-.nav a.cta{
-  background:var(--accent);
-  color:#000;
-  padding:8px 18px;
-  border-radius:4px;
-  box-shadow:var(--glow);
-}
-
-/* ===== DROPDOWN ===== */
-.dropdown{position:relative}
-.dropdown > a::after{content:" ▾";font-size:12px}
-.dropdown-menu{
-  position:absolute;
-  top:38px;
-  left:0;
-  background:#fff;
-  min-width:280px;
-  box-shadow:0 15px 35px rgba(0,0,0,.2);
-  display:none;
-}
-.dropdown-menu a{
-  display:block;
-  padding:12px 18px;
-  color:#000;
-  font-size:14px;
-  border-bottom:1px solid #eee;
-}
-.dropdown-menu a:hover{
-  background:var(--light);
-  color:var(--primary);
-}
-.dropdown:hover .dropdown-menu{display:block}
-
-/* ===== PAGE HEADER ===== */
-.page-header{
-  background:
-    radial-gradient(circle at 20% 20%,rgba(246,180,0,.12),transparent 40%),
-    linear-gradient(135deg,var(--primary),var(--secondary));
-  color:#fff;
-  padding:90px 20px;
-  text-align:center;
-}
-.page-header h1{
-  font-size:42px;
-}
-.page-header p{
-  max-width:850px;
-  margin:16px auto 0;
-  opacity:.95;
-}
-
-/* ===== SECTIONS ===== */
-section{padding:100px 20px}
-.container{max-width:1280px;margin:auto}
-h2{
-  font-size:36px;
-  color:var(--primary);
-  margin-top:0;
-}
-.subtext{
-  max-width:900px;
-  margin-bottom:40px;
-  color:#444;
-}
-
-/* ===== GRID ===== */
-.grid{
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:50px;
-}
-
-/* ===== BOX ===== */
-.box{
-  background:#fff;
-  padding:34px;
-  border-radius:12px;
-  box-shadow:0 10px 30px rgba(0,0,0,.1);
-}
-
-ul{padding-left:18px}
-ul li{margin-bottom:12px}
-
-/* ===== IMAGE GRID ===== */
-.image-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:18px;
-}
-.image-grid img{
-  width:100%;
-  border-radius:10px;
-  box-shadow:0 6px 20px rgba(0,0,0,.15);
-}
-
-/* ===== HIGHLIGHT ===== */
-.highlight{background:var(--light)}
-
-/* ===== CTA ===== */
-.cta{
-  display:inline-block;
-  margin-top:24px;
-  padding:14px 32px;
-  background:var(--accent);
-  color:#000;
-  font-weight:700;
-  text-decoration:none;
-  border-radius:4px;
-  box-shadow:var(--glow);
-}
-
-/* ===== FOOTER ===== */
-footer{
-  background:var(--dark);
-  color:#fff;
-  padding:60px 20px;
-}
-.footer-wrap{
-  max-width:1280px;
-  margin:auto;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:40px;
-}
-
-/* ===== MOBILE ===== */
-@media(max-width:900px){
-  .grid{grid-template-columns:1fr}
-  .nav{display:none}
-  .page-header h1{font-size:32px}
-}
-</style>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<div class="navbar">
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
   <div class="nav-wrap">
+
     <div class="logo">
-      <img src="images/armorseal-logo-white.png">
+      <img src="images/armorseal-logo-white.png" alt="Armorseal Logo">
     </div>
 
-    <div class="nav">
+    <nav class="nav">
       <a href="index.html">Home</a>
 
       <div class="dropdown">
         <a href="products.html">Products</a>
         <div class="dropdown-menu">
-          <a href="heat-shrink-termination-kit.html">Heat Shrinkable Termination Kit</a>
-          <a href="heat-shrink-joint-kit.html">Heat Shrinkable Joint Kit</a>
+          <a href="heat-shrink-termination-kit.html">Termination Kit</a>
+          <a href="heat-shrink-joint-kit.html">Joint Kit</a>
           <a href="polymer-insulator.html">Polymer Insulator</a>
-          <a href="power-cable-accessories.html">Power Cable Accessories</a>
-          <a href="touch-proof-termination-kit.html">Touch Proof Termination Kit</a>
+          <a href="power-cable-accessories.html">Cable Accessories</a>
+          <a href="touch-proof-termination-kit.html">Touch Proof</a>
         </div>
       </div>
 
@@ -228,121 +39,178 @@ footer{
       <a href="contact.html">Contact</a>
 
       <a href="https://wa.me/919427000787" class="cta" target="_blank">Enquiry</a>
-    </div>
+    </nav>
   </div>
-</div>
+</header>
 
-<!-- HEADER -->
-<div class="page-header">
-  <h1>Cable Jointing & Termination Services</h1>
-  <p>
-    Armorline Connectivity, through its brand Armorseal™, delivers professional
-    cable jointing and termination services ensuring safe, reliable and
-    long-lasting power connections.
-  </p>
-</div>
+<!-- ================= PREMIUM HERO ================= -->
+<section class="premium-hero" style="height:75vh;">
+  <div class="hero-content">
+    <h1>
+      Cable Jointing & <span>Termination</span> Services
+    </h1>
 
-<!-- SERVICE DETAILS -->
-<section>
-  <div class="container grid">
+    <p>
+      Professional installation services executed by certified Armorseal™
+      jointers ensuring safe, reliable and long-lasting power connections.
+    </p>
+  </div>
+</section>
 
-    <!-- LEFT -->
-    <div class="box">
+<!-- ================= SERVICE OVERVIEW ================= -->
+<section class="about-section">
+  <div class="container about-grid">
+
+    <div class="about-text">
       <h2>Professional Installation Services</h2>
-      <p class="subtext">
+
+      <p>
         Our certified Armorseal™ jointers are trained to execute cable jointing
-        and termination works for LV, MV and HV applications from 1.1kV to 33kV.
-        Strict installation procedures are followed to ensure maximum safety,
-        performance and service life.
+        and termination works for LV, MV and HV applications from
+        <strong>1.1kV to 33kV</strong>.
       </p>
 
-      <h3>Why Choose Certified Armorseal™ Jointers?</h3>
+      <p>
+        Strict installation procedures are followed to ensure maximum safety,
+        insulation integrity and long-term system reliability.
+      </p>
+
+      <h2 style="margin-top:30px;">Why Choose Certified Armorseal™ Jointers?</h2>
       <ul>
-        <li><strong>Extended Warranty Coverage</strong> on certified installations</li>
+        <li>Extended warranty coverage on certified installations</li>
         <li>Highly trained and experienced jointers</li>
         <li>Precision workmanship reducing failure risks</li>
-        <li>Compliance with safety standards & best practices</li>
+        <li>Compliance with safety standards</li>
         <li>Quick execution with minimal downtime</li>
       </ul>
     </div>
 
-    <!-- RIGHT -->
-    <div class="box">
-      <h3>On-Site Installation Gallery</h3>
-      <div class="image-grid">
-        <img src="images/service1.jpg" alt="Cable Jointing Service">
-        <img src="images/service2.jpg" alt="Cable Termination Service">
-        <img src="images/service3.jpg" alt="Heat Shrink Joint Installation">
-        <img src="images/service4.jpg" alt="Certified Cable Jointers">
+    <div class="about-highlight">
+      <div class="highlight-box">
+        <h3>On-Site Installation Gallery</h3>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:15px;">
+          <img src="images/service1.jpg" style="width:100%;border-radius:10px;">
+          <img src="images/service2.jpg" style="width:100%;border-radius:10px;">
+          <img src="images/service3.jpg" style="width:100%;border-radius:10px;">
+          <img src="images/service4.jpg" style="width:100%;border-radius:10px;">
+        </div>
+
       </div>
     </div>
 
   </div>
 </section>
 
-<!-- WARRANTY / CHARGES -->
-<section class="highlight">
-  <div class="container grid">
+<!-- ================= WARRANTY & CHARGES ================= -->
+<section class="why">
+  <div class="container about-grid">
 
-    <div class="box">
-      <h2>Increase System Reliability & Warranty</h2>
+    <div class="stat">
+      <h3>Increase System Reliability & Warranty</h3>
       <p>
-        Installations performed by certified Armorseal™ jointers enhance system
-        reliability and qualify for extended warranty benefits.
+        Installations performed by certified Armorseal™ jointers enhance
+        system reliability and qualify for extended warranty benefits.
       </p>
     </div>
 
-    <div class="box">
-      <h2>Jointer Charges Depend On</h2>
-      <ul>
-        <li>Voltage Level (LV / MV / HV)</li>
-        <li>Cable Size & Type</li>
-        <li>Number of Joints / Terminations</li>
-        <li>Site Location & Distance</li>
-        <li>Duration & Complexity of Work</li>
+    <div class="stat">
+      <h3>Jointer Charges Depend On</h3>
+      <ul style="text-align:left;margin-top:15px;">
+        <li>Voltage level (LV / MV / HV)</li>
+        <li>Cable size & type</li>
+        <li>Number of joints / terminations</li>
+        <li>Site location & travel distance</li>
+        <li>Duration & complexity of work</li>
       </ul>
     </div>
 
   </div>
 </section>
 
-<!-- CTA -->
-<section>
-  <div class="container">
-    <h2>Connect With Armorline Connectivity</h2>
-    <p class="subtext">
-      For professional cable jointing, termination services or on-site technical
-      support, get in touch with our team today.
-    </p>
+<!-- ================= CTA SECTION ================= -->
+<section class="cta-section">
+  <div class="container" style="text-align:center;">
+    <h2>Need On-Site Installation Support?</h2>
+    <p>Connect with our team for professional cable jointing & termination services.</p>
 
-    <a href="https://wa.me/919427000787" class="cta" target="_blank">
+    <a href="https://wa.me/919427000787" class="btn-primary" style="margin-top:20px;">
       WhatsApp Enquiry
     </a>
-
-    <a href="contact.html" class="cta">Contact Page</a>
   </div>
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="footer-wrap">
-    <div>
-      <img src="images/armorseal-logo.png" style="max-width:180px"><br><br>
-      Engineered for Power & Reliability
+<!-- ================= PREMIUM COMPACT FOOTER ================= -->
+<footer class="premium-footer">
+
+  <div class="electric-line-footer"></div>
+
+  <div class="footer-container">
+
+    <!-- LEFT -->
+    <div class="footer-col">
+      <img src="images/armorseal-logo-white.png" class="footer-logo" alt="Armorseal Logo">
+      <p class="footer-tagline">Power. Protection. Performance.</p>
+
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
     </div>
-    <div>
-      <strong>Contact</strong><br>
-      sales@armorseal.in<br>
-      armorseal.india@gmail.com<br>
-      +91 9427000787
+
+    <!-- MIDDLE -->
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul class="footer-links">
+        <li><a href="heat-shrink-termination-kit.html">Termination Kits</a></li>
+        <li><a href="heat-shrink-joint-kit.html">Jointing Kits</a></li>
+        <li><a href="polymer-insulator.html">Polymer Insulators</a></li>
+        <li><a href="touch-proof-termination-kit.html">Touch Proof</a></li>
+        <li><a href="power-cable-accessories.html">Cable Accessories</a></li>
+      </ul>
     </div>
-    <div>
-      <strong>Location</strong><br>
-      Vadodara, Gujarat<br>
-      India
+
+    <!-- RIGHT -->
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p class="footer-text">sales@armorseal.in</p>
+      <p class="footer-text">+91 9427000787</p>
+
+      <a href="https://wa.me/919427000787" class="footer-cta">
+        Enquiry Now
+      </a>
+
+      <h4 class="footer-office-title">Office</h4>
+      <p class="footer-text">GF-11, Vrundalya Avenue</p>
+      <p class="footer-text">Laxmipura, Gotri Road</p>
+      <p class="footer-text">Vadodara - 390016, Gujarat</p>
     </div>
+
   </div>
+
+  <div class="footer-bottom">
+    © 2026 Armorseal™ | All Rights Reserved
+  </div>
+
 </footer>
+
+<!-- ================= MOBILE BOTTOM BAR ================= -->
+<div class="mobile-bottom">
+  <a href="index.html">🏠</a>
+  <a href="products.html">📦</a>
+  <a href="contact.html">☎</a>
+  <a href="https://wa.me/919427000787">💬</a>
+</div>
+
+
+<!-- ================= JS ================= -->
+<script>
+function toggleMenu(el){
+  el.classList.toggle("active");
+  document.getElementById("mobileMenu").classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
