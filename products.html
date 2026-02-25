@@ -69,10 +69,13 @@
       gap:40px;
     }
 
+    /* FIX: Full image visible */
     #product-page .card img{
       width:100%;
       height:260px;
-      object-fit:cover;
+      object-fit:contain;   /* FULL IMAGE SHOW */
+      background:#fff;      /* empty space clean lage */
+      padding:15px;         /* little breathing space */
       display:block;
     }
 
@@ -82,60 +85,6 @@
       }
     }
   </style>
-
-  <div class="container">
-
-    <h2>Product Categories</h2>
-    <p class="subtext">
-      Designed for utilities, EPC contractors and industrial power projects.
-    </p>
-
-    <div class="grid">
-
-      <a href="heat-shrink-termination-kit.html" class="card">
-        <img src="images/product-termination.jpg">
-        <div class="content">
-          <h3>Heat Shrinkable Termination Kit</h3>
-          <p>Indoor & outdoor termination solutions up to 33kV.</p>
-        </div>
-      </a>
-
-      <a href="heat-shrink-joint-kit.html" class="card">
-        <img src="images/product-joint.jpg">
-        <div class="content">
-          <h3>Heat Shrinkable Joint Kit</h3>
-          <p>Straight-through & transition jointing systems.</p>
-        </div>
-      </a>
-
-      <a href="polymer-insulator.html" class="card">
-        <img src="images/product-polymer-insulator.jpg">
-        <div class="content">
-          <h3>Polymer Insulator</h3>
-          <p>Lightweight, pollution-resistant insulation solutions.</p>
-        </div>
-      </a>
-
-      <a href="power-cable-accessories.html" class="card">
-        <img src="images/product-accessories.jpg">
-        <div class="content">
-          <h3>Power Cable Accessories</h3>
-          <p>Breakouts, end caps, bus bar sleeves, HT tapes & more.</p>
-        </div>
-      </a>
-
-      <a href="touch-proof-termination-kit.html" class="card">
-        <img src="images/product-touch-proof.jpg">
-        <div class="content">
-          <h3>Touch Proof Termination Kit</h3>
-          <p>Enhanced safety termination solutions for switchgear.</p>
-        </div>
-      </a>
-
-    </div>
-
-  </div>
-</section>
 
 <!-- ================= CTA SECTION ================= -->
 <section class="cta-section">
